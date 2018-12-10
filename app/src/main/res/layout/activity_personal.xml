@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.whf.mypanda.activity.PersonalActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#160be7"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/image_fanh"
+            android:src="@mipmap/personal_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="个人中心"
+            android:textSize="25sp"
+            android:layout_width="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/linear_per"
+        android:layout_margin="8dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/image_tx"
+                android:src="@mipmap/personal_login_head"
+                android:layout_width="wrap_content"
+                android:layout_margin="10dp"
+                android:layout_height="wrap_content" />
+                <TextView
+                    android:id="@+id/text_tx"
+                    android:text="点击登录"
+                    android:textSize="25sp"
+                    android:layout_gravity="center"
+                    android:textColor="#000"
+                    android:layout_marginLeft="10dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout
+            android:background="#8effffff"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <TextView
+            android:id="@+id/ls"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/personal_enter_img"
+            android:text="观看历史"
+            android:drawableLeft="@mipmap/personal_history_img"/>
+
+        <LinearLayout
+            android:background="#53ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <TextView
+            android:id="@+id/sc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/personal_enter_img"
+            android:text="我的收藏"
+            android:drawableLeft="@mipmap/personal_shoucang_img"/>
+        <LinearLayout
+            android:background="#53ffffff"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"/>
+        <TextView
+            android:id="@+id/sz"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:drawablePadding="6dp"
+            android:gravity="center_vertical"
+            android:padding="16dp"
+            android:background="?android:attr/selectableItemBackground"
+            android:drawableRight="@mipmap/personal_enter_img"
+            android:text="我的设置"
+            android:drawableLeft="@mipmap/personal_set_img"/>
+    </LinearLayout>
+
+
+</LinearLayout>

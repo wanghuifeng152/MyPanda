@@ -1,0 +1,80 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.whf.mypanda.fragment.NewFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <fm.jiecao.jcvideoplayer_lib.JCVideoPlayerStandard
+            android:id="@+id/jiecao_Player"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"/>
+        <TextView
+            android:id="@+id/text_zhib"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="简介" />
+
+            <ImageView
+                android:id="@+id/image_off"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/lpanda_show" />
+        </LinearLayout>
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/text_t"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/selector_tupian"
+                android:text="测试文本"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <RadioButton
+                android:id="@+id/butt_ds"
+                android:layout_weight="1"
+                android:button="@null"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_width="0dp"
+                android:layout_height="35dp"
+                android:text="多视频直播"
+                android:textSize="20sp"
+                />
+            <RadioButton
+                android:id="@+id/butt_bk"
+                android:layout_weight="1"
+                android:layout_width="0dp"
+                android:button="@null"
+                android:gravity="center"
+                android:layout_height="35dp"
+                android:text="边看边聊"
+                android:textSize="20sp"
+                />
+        </RadioGroup>
+        <FrameLayout
+            android:id="@+id/frag_lay"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"/>
+    </LinearLayout>
+
+</LinearLayout>

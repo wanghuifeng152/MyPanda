@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:orientation="horizontal"
+    android:padding="5dp"
+    android:layout_margin="10dp"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:layout_height="wrap_content">
+        <ImageView
+            android:id="@+id/image_jx"
+            android:scaleType="fitXY"
+            android:layout_width="250dp"
+            android:layout_height="100dp" />
+
+        <ImageView
+            android:id="@+id/hei"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/image_jx"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom|left"
+            android:src="@mipmap/lpanda_bottom_gra" />
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="25dp"
+            android:layout_alignBottom="@+id/hei"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_gravity="bottom|left|center"
+            android:layout_marginLeft="5dp"
+            android:layout_marginBottom="5dp"
+            android:src="@mipmap/play"
+            android:id="@+id/imageView" />
+
+        <TextView
+            android:id="@+id/text_tim"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignTop="@+id/hei"
+            android:gravity="center"
+            android:layout_marginLeft="5dp"
+            android:layout_gravity="bottom|left|center_vertical"
+            android:layout_toEndOf="@+id/imageView"
+            android:layout_toRightOf="@+id/imageView"
+            android:textColor="#fff" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/text_title"
+        android:gravity="center_vertical"
+        android:textSize="17sp"
+        android:textColor="#000"
+        android:padding="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp" />
+
+</LinearLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#808080"
+    tools:context="com.example.whf.mypanda.activity.HistoryActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#160be7"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/image_fanh"
+            android:src="@mipmap/personal_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="历史记录"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:visibility="gone"
+            android:id="@+id/login_zc"
+            android:text="编辑"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <android.support.v7.widget.RecyclerView
+        android:background="#fff"
+        android:id="@+id/recycle"
+        android:layout_width="match_parent"
+        android:layout_margin="5dp"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        ></android.support.v7.widget.RecyclerView>
+    <LinearLayout
+        android:id="@+id/lienar"
+        android:visibility="gone"
+        android:orientation="horizontal"
+        android:layout_gravity="bottom"
+        android:gravity="bottom"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:id="@+id/text_qx"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="全选"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="30dp" />
+        <TextView
+            android:background="#e0e0e0"
+            android:layout_width="1dp"
+            android:layout_height="30dp" />
+        <TextView
+            android:id="@+id/text_sc"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:text="删除"
+            android:textColor="#000"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="30dp" />
+    </LinearLayout>
+</LinearLayout>

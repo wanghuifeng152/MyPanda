@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#f5fafa"
+    tools:context="com.example.whf.mypanda.activity.LoginActivity">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:background="#160be7"
+        android:layout_height="40dp">
+        <ImageView
+            android:id="@+id/image_fanh"
+            android:src="@mipmap/personal_back_img"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:text="登录"
+            android:textSize="25sp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#fff"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:id="@+id/login_zc"
+            android:text="注册"
+            android:textColor="#fff"
+            android:layout_gravity="center"
+            android:layout_margin="10dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+   <TextView
+       android:layout_margin="10dp"
+       android:text="使用社交账号登录到熊猫频道"
+       android:textColor="#3568d5"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+    <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="vertical"
+        android:background="#fff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <ImageView
+        android:id="@+id/image_vx"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/login_weixin"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image_qq"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/login_qq"
+        android:layout_height="wrap_content" />
+    <ImageView
+        android:id="@+id/image_wb"
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:src="@mipmap/login_sina"
+        android:layout_height="wrap_content" />
+</LinearLayout>
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+               android:text="微信"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="  QQ"
+                android:layout_height="wrap_content"/>
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:text="微博"
+                android:layout_height="wrap_content"/>
+        </LinearLayout>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CNTV通行证"
+        android:layout_margin="10dp"
+        android:textColor="#3568d5"
+        />
+
+    <EditText
+        android:id="@+id/edit_name"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="账号：请输入邮箱或手机号"
+        android:textSize="15dp"
+        android:background="@drawable/back_edit"
+        />
+    <EditText
+        android:id="@+id/edit_pas"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="10dp"
+        android:hint="请输入密码"
+        android:textSize="15dp"
+        android:background="@drawable/back_edit"
+        />
+
+    <TextView
+        android:id="@+id/text_wj"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="忘记密码?"
+        android:textColor="#3568d5"
+        android:layout_margin="10dp"
+        android:layout_gravity="right"
+        android:gravity="right"
+        />
+    <Button
+       android:id="@+id/butt_login"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/back_butt"
+        android:text="登录"
+        android:textColor="#fff"
+        />
+
+</LinearLayout>

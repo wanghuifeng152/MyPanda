@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.whf.mypanda.fragment.PinlFragment">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <EditText
+            android:id="@+id/edit_pl"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:hint="添加评论....."
+            android:background="@drawable/back_edit"
+            android:layout_height="wrap_content" />
+        <Button
+            android:id="@+id/but_pl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送"
+            android:textColor="#FFF"
+            android:background="#160bdf"
+            />
+
+
+    </LinearLayout>
+
+<android.support.v7.widget.RecyclerView
+    android:id="@+id/recycl"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"></android.support.v7.widget.RecyclerView>
+
+</LinearLayout>

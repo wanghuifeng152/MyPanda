@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+   >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimary"
+        app:navigationIcon="@mipmap/personal_back_img">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="修改昵称"
+            android:textColor="#fff"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/tv_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="15sp"
+            android:text="保存"
+            android:textColor="#969393"
+            android:layout_gravity="center|right"
+            android:layout_marginRight="10dp"/>
+    </android.support.v7.widget.Toolbar>
+
+    <EditText
+        android:id="@+id/et_updatename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/shape_greyline"
+        android:layout_margin="20dp"
+        android:padding="15dp"
+        android:text="dgdrg"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:text="用户昵称只能为汉字、字母、数字、下划线组成；长度为3-10个汉字（6-20个非汉字字符）；不能为空，不能有禁词，敏感词；不能重复"/>
+</LinearLayout>

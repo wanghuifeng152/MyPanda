@@ -1,0 +1,85 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.whf.mypanda.fragment.YouXZFragment">
+
+    <LinearLayout
+    android:orientation="vertical"
+    android:layout_margin="15dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+    android:text="邮箱注册需要激活后才能登录"
+    android:textColor="#214fe7"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+    <EditText
+    android:id="@+id/edit_zh"
+    android:layout_marginTop="10dp"
+    android:hint="账号：请输入邮箱"
+    android:background="@drawable/back_edit"
+    android:layout_width="match_parent"
+    android:layout_height="30dp" />
+
+    <EditText
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_height="30dp"
+    android:background="@drawable/back_edit"
+    android:hint="请输入密码"
+    />
+
+    <EditText
+            android:id="@+id/edit_pas"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/back_edit"
+            android:hint="请确入密码"
+            />
+
+
+    <LinearLayout
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_marginTop="15dp"
+    android:layout_height="wrap_content">
+
+    <EditText
+    android:layout_width="0dp"
+    android:layout_weight="2"
+    android:layout_height="30dp"
+    android:background="@drawable/back_edit"
+    android:hint="请输入图片验证码"
+    />
+        <ImageView
+            android:layout_marginLeft="10dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:src="@mipmap/play"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <RadioButton
+    android:layout_marginTop="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="我已阅读并同意《央视网网络服务使用协议》"
+    android:textColor="#214fe7"
+    />
+
+
+    <Button
+    android:id="@+id/rad_zc"
+    android:layout_width="match_parent"
+    android:layout_marginTop="20dp"
+    android:text="注册"
+    android:textColor="#fff"
+    android:background="@drawable/back_butt"
+    android:layout_height="40dp" />
+
+    </LinearLayout>
+
+</LinearLayout>
